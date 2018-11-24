@@ -1,0 +1,19 @@
+<!doctype html>
+<head>
+    <title>Angular Calculator</title>
+</head>
+<body ng-app='myApp'>
+    <div ng-controller='myController as c'>
+        <input type='text' ng-model='c.firstNum'/>
+        <input type='text' ng-model='c.secondNum'/>
+        The Sum is: {{c.sum}}
+        <button type='button' ng-click='c.addEm()'>Add Em</button>
+
+        <h1>The Scope</h1>
+       <pre>{{c|json}}</pre> 
+        
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.js'></script>
+    <script type='text/javascript' src='scripts/app.js'></script>
+</body>
